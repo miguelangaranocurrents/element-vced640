@@ -38,6 +38,12 @@ $left-gutter: 64px;
         color: $secondary-content;
     }
 
+    /* The autocomplete and formatting bar overflow the edit composer, so the
+       wrapper must not be clipped by the body slot. */
+    .mx_EditMessageComposerWrapper {
+        overflow: visible;
+    }
+
     .mx_EventTile_content {
         &.mx_EditMessageComposer,
         &.mx_EditWysiwygComposer {
